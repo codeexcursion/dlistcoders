@@ -1,0 +1,339 @@
+---
+---
+
+@import 'jekyll-theme-hacker';
+
+
+body {
+  background-image: url("");	
+  background-color: black;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+
+a {
+  color: rgb(0,200,0);
+  text-shadow: .1em .1em .75em rgb(0,250,0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: rgb(0,150,0);;
+  letter-spacing: -0.03em;
+}
+
+ul li {
+  list-style-image: none;
+}
+
+ol li::marker {
+  color: green;
+  font-weight:bold;
+  font-size: 1.15em;
+}
+
+ul li::marker {
+  color: green;
+  font-weight:bold;
+  font-size: 1.5em;
+}
+
+div#articles ul li, div#tips ul li {
+  list-style-type: none;
+}
+
+#xfooter {
+  clear: left; 
+  float: left; 
+  width: 100%; 
+  text-shadow: 2px 2px 5px green; 
+  border-style: solid; 
+  border-width: 0px; 
+  border-top-width: .25em; 
+  border-color: green;  
+}
+
+h1, h2, h3 {
+  margin-bottom: 0px;
+}
+
+#navbar {
+	position: fixed; 
+	top: 0px; 
+	left: 0px; 
+	width: 100%; 
+	float: left; 
+	text-shadow: 2px 2px 5px green; 
+	border-style: solid; 
+	border-width: 0px; 
+	border-bottom-width: .25em; 
+	border-color: green;
+	background-color: Black;
+
+}
+ 
+#content {
+  padding: 1em;	
+}
+
+#navbar * {
+  position: relative;
+}
+
+  #navbar > .logo, #navbar > span.logo-menu > h1.logo, 
+  #navbar > span.logo-menu, #navbar > span.logo-menu > menu {
+    float: left; 
+  }
+  #navbar > span.logo-menu {
+    width:  50%;
+  }
+  #navbar > span.logo-menu >.menu {
+    position: absolute; 
+    bottom: 1.5em; 
+    width: 50%;
+  }
+
+
+div[class="content"] > pre:not([class]) {
+   border-width: 0px;
+   color: rgb(0,255,0);
+    background-color: black;
+    border-radius: 12px;
+    padding: .5em;
+    line-height: 2em;
+ }
+
+@media only screen and (min-width: 800px) {
+  #navbar > div.search {
+    float: right; 
+    padding-top: .5em;
+  }
+  
+  #headerSpacer {
+    height: 4.5em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #navbar > div.search {
+    clear: both;
+    float: left; 
+    padding-top: .5em;
+  }
+  
+  #headerSpacer {
+    height: 4.5em;
+  }
+}
+
+#nomatch {
+    position: sticky;
+    padding: 0px;
+    margin: 0px;
+    background-color: none;
+    float: right;
+    width: 50%;
+    top: -2em;
+    left: 2em;
+    color: Green; 
+    border-color: green;
+    border-style: solid;
+    border-width: .1em;
+    padding: 1em;
+    margin: 0px;
+    border-radius: 2em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -khtml-border-radius: 2em;
+    -moz-box-shadow: 3px 3px 4px #666;
+    -webkit-box-shadow: 3px 3px 4px #666;
+    box-shadow: 3px 3px 4px #666;
+
+  }
+
+  .linkGroup a {
+    display: block;
+  }
+
+ .linkGroupCaption {
+    color: Green;
+    background-color: lightgray;
+    padding: .2em;
+    margin: 0px;
+    position: relative;
+    bottom: -.5em;
+    left: 2em;
+    white-space: nowrap;
+    border-radius: 2em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -khtml-border-radius: 2em;
+    -moz-box-shadow: 3px 3px 4px #666;
+    -webkit-box-shadow: 3px 3px 4px #666;
+    box-shadow: 3px 3px 4px #666;
+  }
+
+
+/* 
+@media only screen and (min-width: 800px) {
+  #navbar > div.search {
+    float: right; 
+    padding-top: .5em;
+  }
+  
+  #headerSpacer {
+    height: 4em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar > div.search {
+    clear: both;
+    float: left; 
+    padding-top: .5em;
+  }
+  
+  #headerSpacer {
+    height: 8em;
+  }
+}
+ 
+  body {
+    color: black;
+    background-color: white;
+    font-family: monospace;
+    line-height: normal;
+  }
+
+  input, button, textarea {
+    color: rgb(0,50,0);
+    background-color: white;
+    border-radius: 12px;
+    padding: .5em;
+    border-color: black;
+    border-style: solid;
+    border-width: .1em;
+    font-size: 1em;
+  }
+  
+  button, input[type=button] {
+    color: white;
+    background-color: rgb(0,50,0);
+    border-width: 0px;
+  }
+
+  .terminal {
+    color: white; 
+    background-color: black;
+    padding: 1em;
+    margin: 0px;
+    border-radius: 1em;
+  }
+
+ pre.terminal > pre, pre.terminal > pre > code {
+   border-width: 0px;
+   background-color:  black;
+   color: white;
+ }
+
+
+
+table.tableblock th, table.tableblock tr:nth-child(even) {
+  background-color: rgb(225,250,225);
+}
+
+table.tableblock, th.tableblock, td.tableblock {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+div.admonitionblock table {
+  border-radius: 12px;
+}
+
+div.admonitionblock table, div.admonitionblock body, div.admonitionblock td, div.admonitionblock th {
+  border-width: 0px;
+  border-radius: 12px;
+}
+
+div.admonitionblock td {
+  background-color: rgb(225,250,225);
+}
+
+div.admonitionblock td.content {
+  border-left: .1em;
+  border-style: solid;
+  padding: 1em;
+}
+
+div.admonitionblock td.icon {
+  font-style: italic;
+  padding: 1em;
+  font-size: 2em;
+  border-right: .1em;
+  border-style: solid;
+}
+
+
+#navbar > *{
+  position: relative;
+}
+*/
+ .terminalCaption, .codeCaption  {
+    color: white; 
+    background-color: rgb(0,50,0);
+    padding: .2em;
+    margin: 0px;
+    position: relative;
+    bottom: -1em;
+    left: 2em;
+    z-index: 100000;
+    white-space: nowrap;
+    border-radius: 2em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -khtml-border-radius: 2em;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000; 
+ }
+
+.terminalCaption > a, .codeCaption > a {
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0,250,0);
+}
+
+.terminalCaption > a:visited, .codeCaption > a:visited {
+    color: rgb(225, 225, 225);
+}
+
+
+/*
+ 
+
+  figure {
+    text-align: center;
+  }
+
+  figure figurecaption {
+    font-size: 1.2em;
+    font-style: oblique;
+  }
+
+#wrap > .container {
+  padding-top: 0px;
+}
+
+.page-header {
+    margin: 0px 0px 20px;
+}
+
+a:visited {
+    color: rgb(25, 25, 25);
+    text-shadow: 2px 2px 5px rgb(0,150,0);
+}
+
+a {
+    color: Black;
+    text-shadow: 2px 2px 5px rgb(0,150,0);
+}
+*/

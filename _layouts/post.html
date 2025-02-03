@@ -1,0 +1,12 @@
+---
+layout: default
+---
+  <h2>{{ page.title }}</h2>
+  <small>Created:  {{ page.date | date: "%-d %B %Y" }}</small>&nbsp;&nbsp;<small>Modified:  {{ page.modifiedDate | date: "%-d %B %Y" }}</small>
+
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
