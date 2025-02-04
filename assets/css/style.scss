@@ -43,6 +43,11 @@ div#articles ul li, div#tips ul li {
   margin-bottom: 3em;
 }
 
+#siteTitle {
+  margin-bottom: 0px; 
+  font-size: 7em;
+}
+
 #xfooter {
   color: #EEBB5F;
   clear: left; 
@@ -63,8 +68,6 @@ h1, h2, h3 {
 	top: 0px; 
 	left: 0px; 
 	width: 100%; 
-	float: left; 
-	text-shadow: 2px 2px 5px gold; 
 	border-style: solid; 
 	border-width: 0px; 
 	border-bottom-width: .25em; 
