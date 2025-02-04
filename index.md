@@ -9,10 +9,10 @@ layout: default
       {% for post in site.categories['Tech Article'] %}
         <li>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br/>
-          {{ post.excerpt }}<br/>
           Created: {{ post.date | date: "%-d %B %Y" }}<br/>
           Modified: {{ post.modifiedDate | date: "%-d %B %Y" }}<br/>
-          tags: {{ post.tags | join: " - " }}
+          tags: {{ post.tags | join: " - " }}<br/>
+          {{ post.excerpt }}
         </li>
       {% endfor %}
     </ul>
