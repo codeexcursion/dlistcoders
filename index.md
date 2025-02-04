@@ -8,8 +8,8 @@ layout: default
       {% for post in site.categories['Tech Article'] %}
     <ul>
         <li>
-          {{ post.date | date: "%-d %B %Y" }}<br/>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br/>
+          Created: {{ post.date | date: "%-d %B %Y" }} Modified: {{ post.modifiedDate | date: "%-d %B %Y" }}<br/>
           tags: {{ post.tags | join: " - " }}
         </li>
     </ul>
