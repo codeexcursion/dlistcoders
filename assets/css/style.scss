@@ -11,14 +11,14 @@ body {
 }
 
 a {
-  color: rgb(0,200,0);
+  color: #EEBB5F;
   text-shadow: .1em .1em .75em rgb(0,250,0);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: rgb(0,150,0);;
+  color: #EEBB5F;
   letter-spacing: -0.03em;
 }
 
@@ -27,13 +27,13 @@ ul li {
 }
 
 ol li::marker {
-  color: green;
+  color: gold;
   font-weight:bold;
   font-size: 1.15em;
 }
 
 ul li::marker {
-  color: green;
+  color: gold;
   font-weight:bold;
   font-size: 1.5em;
 }
@@ -46,11 +46,11 @@ div#articles ul li, div#tips ul li {
   clear: left; 
   float: left; 
   width: 100%; 
-  text-shadow: 2px 2px 5px green; 
+  text-shadow: 2px 2px 5px gold; 
   border-style: solid; 
   border-width: 0px; 
   border-top-width: .25em; 
-  border-color: green;  
+  border-color: gold;  
 }
 
 h1, h2, h3 {
@@ -63,11 +63,11 @@ h1, h2, h3 {
 	left: 0px; 
 	width: 100%; 
 	float: left; 
-	text-shadow: 2px 2px 5px green; 
+	text-shadow: 2px 2px 5px gold; 
 	border-style: solid; 
 	border-width: 0px; 
 	border-bottom-width: .25em; 
-	border-color: green;
+	border-color: gold;
 	background-color: Black;
 
 }
@@ -96,7 +96,7 @@ h1, h2, h3 {
 
 div[class="content"] > pre:not([class]) {
    border-width: 0px;
-   color: rgb(0,255,0);
+   color: #EEBB5F;
     background-color: black;
     border-radius: 12px;
     padding: .5em;
@@ -134,8 +134,8 @@ div[class="content"] > pre:not([class]) {
     width: 50%;
     top: -2em;
     left: 2em;
-    color: Green; 
-    border-color: green;
+    color: gold; 
+    border-color: gold;
     border-style: solid;
     border-width: .1em;
     padding: 1em;
@@ -155,7 +155,7 @@ div[class="content"] > pre:not([class]) {
   }
 
  .linkGroupCaption {
-    color: Green;
+    color: gold;
     background-color: lightgray;
     padding: .2em;
     margin: 0px;
@@ -299,7 +299,7 @@ div.admonitionblock td.icon {
 
 .terminalCaption > a, .codeCaption > a {
     color: white;
-    text-shadow: 2px 2px 5px rgb(0,250,0);
+    text-shadow: 2px 2px 5px #EEBB5F;
 }
 
 .terminalCaption > a:visited, .codeCaption > a:visited {
