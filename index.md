@@ -6,7 +6,7 @@ layout: default
     <h2>Mojo Language</h2>
 
     <ul>
-      {% for post in site.categories['Tech Article'] %}
+      {% for post in site.categories['Mojo Article'] %}
         <li>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br/>
           Created: {{ post.date | date: "%-d %B %Y" }}<br/>

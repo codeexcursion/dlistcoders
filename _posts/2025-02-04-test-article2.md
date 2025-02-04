@@ -4,7 +4,7 @@ title: Test Article 2
 date: 2025-02-04
 modifiedDate: 2025-02-04
 tags: [mojo, mojolang]
-category: Tech Article
+category: Mojo Article
 ---
 
 The quick brown fox jumped over the lazy dog.
