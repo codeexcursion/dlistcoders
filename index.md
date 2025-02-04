@@ -2,8 +2,8 @@
 layout: default
 ---
 <div id="indexPageContent">
-  <div id="articles" style="width: 40%; float: left; padding-right: 5%; padding-left: 5%;">
-    <h3>Articles</h3>
+  <div id="articles">
+    <h2>Mojo Language</h2>
 
       {% for post in site.categories['Tech Article'] %}
     <ul>
