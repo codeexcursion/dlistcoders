@@ -28,7 +28,18 @@ A decorator is code that executes during compilation of the code.  The @value de
 a struct needs for compilation.
 
 {% highlight python linenos %}
-  $ netstat -gn
+    @value
+    struct Person:
+        var name: String
+        var eyeColor: String
+        var heightInches: Float16
+
+    fn main():
+        bob = Person("Bob", "Brown", 70.5)
+        bob.name = "Raplph"
+        print(bob.name)
+        print(bob.eyeColor)
+        print(bob.heightInches)
 {% endhighlight %}
 
 * Line 1 contains the @value decorator which modifies the Person struct during compilation.
