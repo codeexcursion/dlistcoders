@@ -27,7 +27,7 @@ Before we begin read and writing example code we need to briefly discuss [Mojo D
 A decorator is code that executes during compilation of the code.  The @value decorator we use below adds all the necessary boiler plate methods
 a struct needs for compilation.
 
-{% highlight python %}
+{% highlight mojo linenos %}
     @value
     struct Person:
         var name: String
@@ -40,7 +40,7 @@ a struct needs for compilation.
         print(bob.name)
         print(bob.eyeColor)
         print(bob.heightInches)
-{% highlight %}
+{% endhighlight %}
 
 * Line 1 contains the @value decorator which modifies the Person struct during compilation.
 * Line 2 begins the definition of the Person structure.
