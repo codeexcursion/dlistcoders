@@ -3,6 +3,9 @@
 
 @import 'jekyll-theme-hacker';
 
+code > .gutter {
+  width: 3em;
+}
 
 body {
   background-image: url("");	
