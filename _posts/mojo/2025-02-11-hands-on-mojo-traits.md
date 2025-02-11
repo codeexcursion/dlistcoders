@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hands On Mojo Structures 
+title: Hands On Mojo Traits 1
 date: 2025-02-11
 modifiedDate: 2025-02-11
 tags: [mojo, mojolang, trait, traits]
