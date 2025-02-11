@@ -3,18 +3,18 @@ layout: post
 title: Hands On Mojo Structures 
 date: 2025-02-10
 modifiedDate: 2025-02-10
-tags: [mojo, mojolang, structure, structures, trait, traits]
+tags: [mojo, mojolang, structure, structures]
 category: Mojo Article
 ---
 
-Understanding [Mojo structure](https://docs.modular.com/mojo/manual/structs) (struct) is critical to being able to read Mojo Standard Library documentation.
+Understanding [Mojo structures](https://docs.modular.com/mojo/manual/structs) (struct) is critical to being able to read Mojo Standard Library documentation.
 We will try to keep our exploration of structs as shallow as possible so we can jump right in to writing compilable code. The goal is to provide enough understanding
 of Mojo structures to enable reading of documentation.
 <!--more-->
 
 If you need help installing Mojo you can watch our [Mojo Lang Install](https://rumble.com/v60lhj2-mojo-lang-install-d-list-coders.html?e9s=src_v1_ucp) video.
 
-Mojo structs are loosely analogous to Java classes.  They do not support inheritance.  [Mojo Structs Class Comparison](https://docs.modular.com/mojo/manual/structs#structs-compared-to-classes).
+Mojo structs are loosely analogous to Java classes.  The main difference being they do not support inheritance.  [Mojo Structs Class Comparison](https://docs.modular.com/mojo/manual/structs#structs-compared-to-classes).
 We are going to focus only on struct basic ability to hold data.  
 
 >All values in Mojo have an associated data type. Most of the types are nominal types, defined by a struct. These types are nominal (or "named") because type equality is determined by the type's name, not its structure.
@@ -36,7 +36,7 @@ struct Person:
 
 fn main():
     bob = Person("Bob", "Brown", 70.5)
-    bob.name = "Raplph"
+    bob.name = "Ralph"
     print(bob.name)
     print(bob.eyeColor)
     print(bob.heightInches)
