@@ -8,10 +8,10 @@ category: Mojo Article
 ---
 
 Understanding [Mojo traits](https://docs.modular.com/mojo/manual/traits) (struct) is critical to being able to read Mojo Standard Library documentation.
-We will try to keep our exploration of structs as shallow as possible so we can jump right in to writing compilable code. The goal is to provide enough understanding of Mojo structures to enable reading of documentation.
+We will try to keep our exploration of traits as shallow as possible so we can jump right in to writing compilable code. The goal is to provide enough understanding of Mojo structures to enable reading of documentation.
 <!--more-->
 
-This article entry is based on [Hands On Mojo Structures](/mojo%20article/2025/02/10/hands-on-mojo-structures.html) video.
+This article entry is based on [Hands On Mojo Structures](/mojo%20article/2025/02/10/hands-on-mojo-structures.html).
 
 Mojo traits are roughly analogous to Java interfaces.  They are a blueprint that a method or a function can use as a contract.  Unlike Java
 interfaces, traits can be defined and will match already existing structures.
