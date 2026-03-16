@@ -2,7 +2,7 @@
 layout: post
 title: Hands On Mojo Traits 1
 date: 2025-02-11
-modifiedDate: 2025-02-11
+modifiedDate: 2026-03-16
 tags: [mojo, mojolang, trait, traits]
 category: Mojo Article
 ---
@@ -21,8 +21,8 @@ In the below code we add the "write_to" method as defined by the documentaton (l
 statments needed.
 
 {% highlight mojo linenos %}
-@value
-struct Person:
+@fieldwise_init
+struct Person(Writable):
     var name: String
     var eyeColor: String
     var heightInches: Float16

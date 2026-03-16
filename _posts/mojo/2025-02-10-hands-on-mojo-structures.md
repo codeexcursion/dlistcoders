@@ -2,7 +2,7 @@
 layout: post
 title: Hands On Mojo Structures 
 date: 2025-02-10
-modifiedDate: 2025-02-10
+modifiedDate: 2026-03-16
 tags: [mojo, mojolang, structure, structures]
 category: Mojo Article
 ---
@@ -28,7 +28,7 @@ A decorator is code that executes during compilation of the code.  The @value de
 a struct needs for compilation.
 
 {% highlight mojo linenos %}
-@value
+@fieldwise_init
 struct Person:
     var name: String
     var eyeColor: String
